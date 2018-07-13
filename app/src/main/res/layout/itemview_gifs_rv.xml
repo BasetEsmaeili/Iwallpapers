@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:id="@+id/fragment_gifs_recyclerview_wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:src="@drawable/wallpaper"
+        android:scaleType="fitXY"
+        android:transitionName="@string/transitionName"
+        tools:targetApi="lollipop" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_recyclerview_item"
+        android:layout_gravity="bottom"
+        android:padding="8dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/fragment_gifs_recyclerview_add_favorites"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:clickable="true"
+                android:layout_marginRight="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:srcCompat="@drawable/ic_favorite_border_24dp" />
+
+            <ImageView
+                android:id="@+id/fragment_gifs_recyclerview_download"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:clickable="true"
+                android:layout_marginRight="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:srcCompat="@drawable/ic_file_download_24dp" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackgroundBorderless">
+
+    <ImageView
+        android:id="@+id/category_fragment_catImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:transitionName="@string/transitionName"
+        tools:src="@drawable/imae_test"
+        tools:targetApi="lollipop" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_gravity="bottom">
+        <TextView
+            android:id="@+id/tv_categoryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="انتزاعی"
+            android:textColor="@android:color/white"
+            android:gravity="left"
+            android:textSize="26dp"/>
+        <TextView
+            android:id="@+id/tv_categoryCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="4 والپیپر"
+            android:textColor="@android:color/white"
+            android:gravity="left"
+            android:textSize="16dp"/>
+    </LinearLayout>
+</FrameLayout>

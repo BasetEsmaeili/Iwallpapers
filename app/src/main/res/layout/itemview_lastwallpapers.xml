@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    xmlns:tools="http://schemas.android.com/tools">
+<ImageView
+    android:id="@+id/fragment_lastwallpapers_recyclerview_wallpaper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:src="@drawable/wallpaper"
+    android:scaleType="fitXY"
+    android:transitionName="@string/transitionName"
+    tools:targetApi="lollipop" />
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_recyclerview_item"
+        android:layout_gravity="bottom"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/fragment_lastwallpapers_recyclerview_title"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/fragment_lastwallpapers_recyclerview_description"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="والپیپر شماره" />
+
+        <TextView
+            android:id="@+id/fragment_lastwallpapers_recyclerview_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/color_recyclerview_text_description"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="اطلاعات در مورد والپیپر" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/fragment_lastwallpapers_recyclerview_add_favorites"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_favorite_border_24dp" />
+
+            <ImageView
+                android:id="@+id/fragment_lastwallpapers_recyclerview_download"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_file_download_24dp" />
+
+            <ImageView
+                android:id="@+id/fragment_lastwallpapers_recyclerview_setWallpapers"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                app:srcCompat="@drawable/ic_format_paint_24dp" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

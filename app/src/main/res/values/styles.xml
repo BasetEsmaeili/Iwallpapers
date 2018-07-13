@@ -1,0 +1,73 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/yekan</item>
+        <item name=":fontFamily">@font/yekan</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowContentTransitions" tools:targetApi="lollipop">true</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/gray_color</item>
+    </style>
+
+    <style name="NormalToast">
+        <item name="textBold">false</item>
+        <item name="textColor">@android:color/white</item>
+        <item name="font">@font/yekan</item>
+        <item name="textSize">18sp</item>
+        <item name="colorBackground">#0097a7</item>
+        <item name="solidBackground">true</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="strokeColor">#fff</item>
+        <item name="length">SHORT</item> LONG or SHORT
+        <item name="gravity">center</item> top or center
+        <item name="radius">8dp</item>
+    </style>
+    <style name="SuccesToast">
+        <item name="textBold">false</item>
+        <item name="textColor">#fff</item>
+        <item name="font">@font/yekan</item>
+        <item name="textSize">18sp</item>
+        <item name="colorBackground">@color/colorAccent</item>
+        <item name="solidBackground">true</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="strokeColor">#fff</item>
+        <item name="iconStart">@drawable/ic_done_black_24dp</item>
+        <item name="length">SHORT</item> LONG or SHORT
+        <item name="gravity">center</item> top or center
+        <item name="radius">8dp</item>
+    </style>
+
+    <style name="ErrorToast">
+        <item name="textBold">false</item>
+        <item name="textColor">#fff</item>
+        <item name="font">@font/yekan</item>
+        <item name="textSize">18sp</item>
+        <item name="colorBackground">#e53935</item>
+        <item name="solidBackground">true</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="strokeColor">#fff</item>
+        <item name="iconStart">@drawable/ic_error_black_24dp</item>
+        <item name="length">SHORT</item> LONG or SHORT
+        <item name="gravity">center</item> top or center
+        <item name="radius">8dp</item>
+    </style>
+</resources>

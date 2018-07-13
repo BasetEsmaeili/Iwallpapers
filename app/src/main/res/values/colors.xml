@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorBetwenPrimaryAndDark">#EEEEEE</color>
+    <color name="colorPrimaryDark">#8b8b8b</color>
+    <color name="colorAccent">#1EA164</color>
+    <color name="gray_color">#6E6E6E</color>
+    <color name="main_title_text_color">#999999</color>
+    <color name="bg_recyclerview_item">#70000000</color>
+    <color name="color_recyclerview_text_description">#D3D4D7</color>
+    <color name="detail_sender_textColor">#b5ffffff</color>
+    <color name="background_bottomsheet">#7f000000</color>
+    <color name="white">#ffffff</color>
+</resources>

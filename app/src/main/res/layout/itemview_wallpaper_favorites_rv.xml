@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/fragment_wallpaper_favorites_wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionName="@string/transitionName"
+        tools:src="@drawable/imae_test"
+        android:scaleType="fitXY"/>
+    <LinearLayout
+        android:background="@color/background_bottomsheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/fragment_wallpaper_favorites_title"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:padding="4dp"
+                android:ellipsize="end"
+                android:layout_marginLeft="4dp"
+                android:textColor="@android:color/white"
+                android:gravity="left"
+                tools:text="عاشق چراغ های خیابانم که هرگز شکلیک نخواهد شد"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/fragment_wallpaper_favorites_description"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                tools:text="آرمین مشایاخ"
+                android:gravity="left"
+                android:layout_marginLeft="4dp"
+                android:textColor="@android:color/white"
+                android:maxLines="1"
+                android:textSize="12dp"
+                android:ellipsize="end"
+                android:padding="4dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/fragment_wallpaper_favorites_favorites_btn"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:clickable="true"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                app:srcCompat="@drawable/ic_favorite_border_24dp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityCategory">
+<android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|enterAlways">
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="54dp"
+        android:paddingBottom="6dp">
+        <TextView
+            android:id="@+id/activity_category_top_categoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="انتزاعی"
+            android:textColor="#6E6E6E"
+            android:textSize="24dp"/>
+        <TextView
+            android:id="@+id/activity_category_top_wallpaperCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="۴ تصویر ضمینه"/>
+    </LinearLayout>
+</android.support.design.widget.AppBarLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:id="@+id/activity_category_detail_Progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_activity_category"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</android.support.design.widget.CoordinatorLayout>
