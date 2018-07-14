@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:transitionName="@string/transitionName"
-        tools:src="@drawable/imae_test"
+        tools:src="@drawable/image_test"
         android:scaleType="fitXY"/>
     <LinearLayout
         android:background="@color/background_bottomsheet"
