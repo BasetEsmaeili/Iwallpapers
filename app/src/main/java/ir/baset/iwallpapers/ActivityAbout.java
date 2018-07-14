@@ -47,8 +47,19 @@ private TextView app_version;
         int id=v.getId();
         switch (id){
             case R.id.about_github_source:
-                Intent github =new Intent(Intent.ACTION_VIEW, Uri.parse(""));
+                Intent github =new Intent(Intent.ACTION_VIEW, Uri.parse("https://gitlab.com/Baset_esmaeili/Iwallpapers"));
                 startActivity(github);
+                break;
+            case R.id.about_developer_website:
+                Intent weblog=new Intent(Intent.ACTION_VIEW,Uri.parse("https://basetesmaeili.blogspot.com/"));
+                startActivity(weblog);
+                break;
+            case R.id.about_send_feedback:
+                Intent email = new Intent(Intent.ACTION_SEND);
+                email.putExtra(Intent.EXTRA_EMAIL, new String[]{"baset.esmaili0@gmail.com"});
+                email.setType("message/rfc822");
+                startActivity(Intent.createChooser(email, "Choose an Email client :"));
+                break;
         }
     }
 }
