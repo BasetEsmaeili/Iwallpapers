@@ -580,7 +580,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    tools:src="@drawable/imae_test" />
+                    tools:src="@drawable/image_test" />
 
                 <TextView
                     android:id="@+id/activity_detail_category_tv"

@@ -15,7 +15,7 @@
         android:scaleType="centerCrop"
         android:transitionName="@string/transitionName"
         tools:targetApi="lollipop"
-        tools:src="@drawable/imae_test"/>
+        tools:src="@drawable/image_test" />
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
